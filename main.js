@@ -15893,7 +15893,7 @@ window.onload=function()
 				LoadLang('loc/'+lang+'.js?v='+Game.version,function(){
 					var launch=function(){
 						Game.Launch();
-						if (top!=self) Game.ErrorFrame();
+						if (top!=self) print("IFramed");
 						else
 						{
 							console.log('[=== '+choose([
